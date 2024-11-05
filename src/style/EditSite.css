@@ -1,0 +1,67 @@
+.edit-site-container {
+  padding: 20px;
+}
+
+.widget-list {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.widget-option {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  cursor: grab;
+}
+
+.canvas {
+  width: 70%;
+  float: right;
+  border: 2px dashed #aaa;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.canvas.hover {
+  background-color: #e0e0e0;
+}
+.remove-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: absolute; /* Make it position absolute to place it in the corner */
+  top: 5px; /* Adjust based on your layout */
+  right: 5px; /* Adjust based on your layout */
+}
+
+
+
+.remove-button:hover {
+  background-color: darkred;
+}
+
+.properties-panel {
+  width: 25%;
+  padding: 10px;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.properties-panel h3 {
+  margin-top: 0;
+}
+
+.properties-panel input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

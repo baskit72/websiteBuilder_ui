@@ -1,0 +1,143 @@
+.text-widget-container {
+  position: relative;
+  overflow: hidden; /* Ensure content stays within bounds */
+  border: 0px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out; /* Smooth transitions for changes */
+  box-sizing: border-box;
+}
+
+/* Display Mode */
+.text-widget-display {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  padding: 20px;
+}
+
+/* Editor Mode */
+.text-widget-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs and Labels */
+.text-widget-editor label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-widget-editor input[type="color"],
+.text-widget-editor input[type="file"],
+.text-widget-editor input[type="range"],
+.text-widget-editor select,
+.text-widget-editor input[type="number"] {
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Range Input Styling */
+.text-widget-editor input[type="range"] {
+  width: 100%;
+}
+
+/* Padding and Margin Inputs */
+.padding-options, .margin-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.padding-options label, .margin-options label {
+  flex: 1 1 50px;
+}
+
+.padding-options input, .margin-options input {
+  flex: 1 1 100px;
+}
+
+/* Save Button */
+.text-widget-editor button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.text-widget-editor button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Resize Handles */
+.resize-handle {
+  position: absolute;
+  background-color: rgba(0, 123, 255, 0.5);
+  z-index: 10;
+}
+
+.resize-handle:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+
+.resize-handle.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  cursor: ew-resize;
+}
+
+.resize-handle.bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  cursor: ns-resize;
+}
+
+.resize-handle.bottom-right {
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  cursor: nwse-resize;
+
+
+
+}
+
+/*image in content to accomodate automaticaly */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+
+.widget-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Default blur */
+  transition: filter 0.3s ease; /* Smooth transition */
+  z-index: 1;
+}

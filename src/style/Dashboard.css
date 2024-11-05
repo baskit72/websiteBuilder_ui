@@ -1,0 +1,111 @@
+/* Dashboard container styling */
+.dashboard-container {
+  max-width: 600px; /* Set a max width for a compact design */
+  margin: 0 auto; /* Center the container */
+  padding: 2px; /* Add some padding */
+  font-family: Arial, sans-serif; /* Font style */
+  text-align: center; /* Center text */
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title styling */
+.dashboard-container h1 {
+  font-size: 2rem; /* Title size */
+  margin-bottom: 20px; /* Margin below title */
+  color: #333; /* Dark color for title */
+}
+
+/* Create Website Button */
+.dashboard-container button {
+  background-color: #d3d3d3; /* Blue background */
+  color: #000; /* Black text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for buttons */
+  margin: 10px 0; /* Margin around buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1rem; /* Button font size */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.dashboard-container button:hover {
+  background-color: #81d4fa; /* Lighter blue on hover */
+  transform: scale(1.05); /* Slightly increase button size */
+}
+
+/* Site list styling */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* No padding */
+  margin: 2px 0; /* Margin for the list */
+}
+
+ul li {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 1px; /* Padding for list items */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between list items */
+  background-color: #f0f0f0; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Row hover effect */
+ul li:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+/* Site name styling */
+ul li span {
+  flex: 1; /* Flex grow */
+  text-align: left; /* Align text left */
+  font-size: 1rem; /* Font size */
+  margin-right: 10px; /* Space between site name and buttons */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Ellipsis for overflow */
+  white-space: nowrap; /* No wrapping */
+}
+
+/* Edit and Delete Buttons placed side-by-side */
+ul li .button-group {
+  display: flex; /* Flexbox for button group */
+  gap: 5px; /* Small space between buttons */
+}
+
+ul li button {
+  background-color: #d3d3d3; /* Light gray background */
+  color: #000; /* Black text */
+  border: none; /* No border */
+  padding: 8px 10px; /* Padding for buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+/* Edit and Delete Buttons Hover Effect */
+ul li button:hover {
+  background-color: #a9a9a9; /* Gray on hover */
+  transform: scale(1.05); /* Slightly increase button size */
+}
+
+/* Logout Button */
+.dashboard-container .logout-button {
+  background-color: #ffccbc; /* Light red for logout button */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding for buttons */
+  margin: 10px 0; /* Margin around buttons */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1rem; /* Button font size */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+.dashboard-container .logout-button:hover {
+  background-color: #ffab91; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly increase button size */
+}
